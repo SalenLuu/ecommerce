@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+.header {
+    display: flex;
+    border-bottom: solid #5D6D7E 1px;
+}
+
+.title {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    column-gap: 5rem;
+}
+
+nav {
+
+    height: 10%;
+    width: 100%;
+
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+
+.home__form {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.card {
+    max-width: 20rem;
+    position: relative;
+    max-height: 30rem;
+    margin: 4rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(207, 207, 207, 0.25);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(207, 207, 207, 0.25);
+    box-shadow: 10px 10px 5px 0px rgba(207, 207, 207, 0.25);
+    transition: 0, 3s ease-in-out;
+    border: 0.8px #aaa solid;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: transform 200ms ease;
+}
+
+.card.card:hover {
+    transform: scale(1.05);
+}
+
+
+
+.card__img {
+    padding: 2rem;
+    max-width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card__body {
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    row-gap: 25px;
+}
+
+.card__product-info {
+    font-size: 0.9rem;
+    font-weight: 400;
+    grid-column: span 2;
+}
+
+.card__price-container {
+    display: grid;
+    gap: 3px;
+}
+
+.card__product-price-label {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.card__product-price-value {
+    font-weight: 500;
+}
+
+.card__product-price-value::before {
+    content: '$';
+}
+
+.card__cart-button {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f85555;
+    cursor: pointer;
+    transition: transform 200ms ease;
+
+}
+
+.card__cart-button:hover {
+    transform: scale(1.05);
+}
+
+.bx {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.price::before {
+    content: '$';
+}
+
+/*-----------------------BARRA LATERAL DEL HOME----------------------------*/
+
+.aside {
+    padding: 50px 20px 20px;
+    width: 300px;
+}
+
+.bx-chevron-down {
+    color: black;
+}
+
+.aside__price-container {
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.aside__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    height: 40px;
+    padding: 1px;
+}
+
+
+.aside__input-from-container .aside__input-to-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+    padding-left: 10px;
+}
+
+.aside__input-from .aside__input-to {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    display: block;
+    font-size: 1rem;
+    padding: 6px 10px;
+    width: 80%;
+}
+
+.aside__form-btn {
+    background-color: #f85555;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    margin: 25px 0 20px auto;
+    padding: 8px 15px;
+}
+
+.category__container {
+    margin-bottom: 10px;
+    max-height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.category__list {
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.category__list-hidde {
+    height: 0;
+}
+
+.aside__form-filter-hidde {
+    visibility: hidden;
+}
+
+*/
+/*------------------------------------input del home----------------------------------*/
+
+.home__form-container {
+    margin: 0 10px 30px;
+    position: absolute;
+}
+
+.home__form {
+    display: flex;
+    margin-bottom: 15px;
+    max-width: 900px;
+}
+
+.home__form-input {
+    border: 1px solid #aaa;
+    flex: 1.1;
+    font-size: 0.9rem;
+    height: 45px;
+    padding: 5px 14px;
+}
+
+.home__form-btn {
+    background: #f85555;
+    color: #fff;
+    font-size: 1.1rem;
+    height: 45px;
+    line-height: 1;
+    width: 45px;
+}
